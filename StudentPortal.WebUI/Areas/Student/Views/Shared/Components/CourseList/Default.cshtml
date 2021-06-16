@@ -1,0 +1,30 @@
+﻿@model List<Course>
+
+<div>
+    <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <td>Ders Adı</td>
+           
+        </tr>
+        </thead>
+        <tbody>
+       
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <a class="list-group-item list-group-item-action">@item.CourseName</a>
+                    </td>
+                    <td>
+                        <form asp-controller="Cart" asp-action="AddToCart" method="post" style="display: inline;">
+                            <input type="hidden" name="courseId" value="@item.CourseId" />
+                            <button type="submit" class="btn btn-success btn-sm">Ekle</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>

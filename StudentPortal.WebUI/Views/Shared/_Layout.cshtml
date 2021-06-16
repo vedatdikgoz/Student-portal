@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="customcss/bootstrap/css/bootstrap.min.css">
+    <link href="customcss/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="customcss/libs/css/style.css">
+    <link rel="stylesheet" href="customcss/fonts/fontawesome/css/fontawesome-all.css">
+    <script src="customcss/jquery/jquery-3.3.1.min.js"></script>
+    <script src="customcss/bootstrap/js/bootstrap.bundle.js"></script>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <a class="navbar-brand" href="index.html">ÜNİVERSİTE ÖĞRENCİ BİLGİ SİSTEMİ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+<div class="container">
+    @RenderBody()
+</div>
+</body>
+</html>

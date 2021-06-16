@@ -1,0 +1,41 @@
+﻿@model List<ChosenCourseListModel>
+@{
+    ViewData["Title"] = "ChosenCourse Page";
+    Layout = "~/Areas/Teacher/Views/Shared/_TeacherLayout.cshtml";
+}
+
+<h1>Seçilen Dersler</h1>
+<hr />
+
+
+<table class="table table-bordered table-striped">
+    <tr class="bg-secondary-light">
+        <td>Ders Seçim</td>
+        <td>Vize</td>
+        <td>Kısa Sınav 1</td>
+        <td>Kısa Sınav 2</td>
+        <td>Ödev</td>
+        <td>Final</td>
+        <td>Final</td>
+    </tr>
+    @foreach (var chosenCourse in Model)
+    {
+
+        @foreach (var chosenCourseItem in chosenCourse.ChosenCourseItems)
+        {
+            <tr>
+                <td>@chosenCourseItem.ChosenCourseName</td>
+                <td>
+                    @chosenCourseItem.Midterm
+                </td>
+                <td>@chosenCourseItem.Quiz1</td>
+                <td>@chosenCourseItem.Quiz2</td>
+                <td>@chosenCourseItem.Homework</td>
+                <td>@chosenCourseItem.Final</td>
+                <td>
+                    <a class="btn btn-outline-success btn-sm" asp-controller="Admin" asp-action="AddMarks" asp-route-Id="@chosenCourseItem.ChosenCourseItemId">Not Ekle</a>
+                </td>
+            </tr>
+        }
+    }
+</table>

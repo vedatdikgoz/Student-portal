@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/customcss/bootstrap/css/bootstrap.min.css">
+    <link href="/customcss/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/customcss/libs/css/style.css">
+    <link rel="stylesheet" href="/customcss/fonts/fontawesome/css/fontawesome-all.css">
+
+    <title>Öğrenci Sayfası</title>
+</head>
+
+<body>
+    <div class="dashboard-main-wrapper">
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="">ÖĞrencİ Bİlgİ Sİstemİ</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right-top">
+                        <li class="nav-item dropdown nav-user">
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="/img/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="nav-user-info">
+                                    <a href="" class="text-white">@User.Identity.Name </a>
+                                </div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Hesap</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Ayarlar</a>
+                                <a class="dropdown-item" asp-controller="Admin" asp-action="LogOff" asp-area="Student"><i class="fas fa-power-off mr-2"></i>Çıkış</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">Anasayfa</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider">
+                                Menü
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" asp-controller="Cart" asp-action="GetChosenCourses"><i class="fa fa-fw fa-user-circle"></i>Seçilen Dersler </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa fa-fw fa-rocket"></i>Ders Programı</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-fw fa-chart-pie"></i>Transkript</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" asp-controller="Cart" asp-action="Index" asp-area="Student"><i class="fab fa-fw fa-wpforms"></i>Ders Seçimi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" ><i class="fas fa-fw fa-table"></i>Başvuru İşlemleri</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="dashboard-wrapper">
+            <div>
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <script src="/customcss/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/customcss/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="/customcss/slimscroll/jquery.slimscroll.js"></script>
+    <script src="/customcss/libs/js/main-js.js"></script>
+
+
+</body>
+
+</html>
+
+

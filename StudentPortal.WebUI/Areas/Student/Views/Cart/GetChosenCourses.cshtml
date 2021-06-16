@@ -1,0 +1,110 @@
+﻿@model List<ChosenCourseListModel>
+@{
+    ViewData["Title"] = "ChosenCourse Page";
+    Layout = "~/Areas/Student/Views/Shared/_StudentLayout.cshtml";
+}
+<br />
+<div class="container">
+    <div class="row">
+        @foreach (var chosenCourse in Model)
+        {
+            @foreach (var chosenCourseItem in chosenCourse.ChosenCourseItems)
+            {
+
+                    <div class="col-xl-4 col-lg-4  col-md-6 col-sm-6 mb-3">
+                        <div class="card card-custom card-stretch">
+                            <div class="card-body">
+                                <div class="d-flex flex-row align-items-center py-1" style="cursor: pointer; margin: 0;">
+                                    <div class="symbol symbol-60 symbol-light-primary mr-5">
+                                        <span class="symbol-label">
+                                            @chosenCourseItem.ChosenCourseItemId
+                                        </span>
+                                    </div>
+                                    <div class="d-flex flex-column my-lg-0 my-2 pr-3">
+                                        <a href="javascript:;" class="text-dark font-weight-bolder text-hover-primary font-size-h5">
+                                            @chosenCourseItem.ChosenCourseName.ToUpper()
+                                        </a>
+                                        <span class="text-muted font-weight-bold font-size-lg">Örgün Öğretim</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 20%">
+                                                    Oran
+                                                </th>
+                                                <th>
+                                                    Çalışma Tipi
+                                                </th>
+                                                <th style="width: 30%" class="text-right">
+                                                    Not
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    10
+                                                </td>
+                                                <td>
+                                                    Ara S&#x131;nav
+                                                </td>
+                                                <td class="text-right">
+                                                    @chosenCourseItem.Midterm
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    3
+                                                </td>
+                                                <td>
+                                                    K&#x131;sa S&#x131;nav
+                                                </td>
+                                                <td class="text-right">
+                                                    @chosenCourseItem.Quiz1
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    3
+                                                </td>
+                                                <td>
+                                                    K&#x131;sa S&#x131;nav
+                                                </td>
+                                                <td class="text-right">
+                                                    @chosenCourseItem.Quiz2
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    4
+                                                </td>
+                                                <td>
+                                                    &#xD6;dev
+                                                </td>
+                                                <td class="text-right">
+                                                    @chosenCourseItem.Homework
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    80
+                                                </td>
+                                                <td>
+                                                    Final
+                                                </td>
+                                                <td class="text-right">
+                                                    @chosenCourseItem.Final
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            }
+        }
+    </div>
+</div>

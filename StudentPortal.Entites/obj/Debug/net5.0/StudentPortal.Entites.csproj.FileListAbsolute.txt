@@ -1,0 +1,15 @@
+C:\Users\vedat\source\repos\StudentPortal\StudentPortal.Entites\bin\Debug\net5.0\StudentPortal.Entites.deps.json
+C:\Users\vedat\source\repos\StudentPortal\StudentPortal.Entites\bin\Debug\net5.0\StudentPortal.Entites.dll
+C:\Users\vedat\source\repos\StudentPortal\StudentPortal.Entites\bin\Debug\net5.0\ref\StudentPortal.Entites.dll
+C:\Users\vedat\source\repos\StudentPortal\StudentPortal.Entites\bin\Debug\net5.0\StudentPortal.Entites.pdb
+C:\Users\vedat\source\repos\StudentPortal\StudentPortal.Entites\bin\Debug\net5.0\StudentPortal.Core.dll
+C:\Users\vedat\source\repos\StudentPortal\StudentPortal.Entites\bin\Debug\net5.0\StudentPortal.Core.pdb
+C:\Users\vedat\source\repos\StudentPortal\StudentPortal.Entites\obj\Debug\net5.0\StudentPortal.Entites.csproj.AssemblyReference.cache
+C:\Users\vedat\source\repos\StudentPortal\StudentPortal.Entites\obj\Debug\net5.0\StudentPortal.Entites.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vedat\source\repos\StudentPortal\StudentPortal.Entites\obj\Debug\net5.0\StudentPortal.Entites.AssemblyInfoInputs.cache
+C:\Users\vedat\source\repos\StudentPortal\StudentPortal.Entites\obj\Debug\net5.0\StudentPortal.Entites.AssemblyInfo.cs
+C:\Users\vedat\source\repos\StudentPortal\StudentPortal.Entites\obj\Debug\net5.0\StudentPortal.Entites.csproj.CoreCompileInputs.cache
+C:\Users\vedat\source\repos\StudentPortal\StudentPortal.Entites\obj\Debug\net5.0\StudentPortal.Entites.csproj.CopyComplete
+C:\Users\vedat\source\repos\StudentPortal\StudentPortal.Entites\obj\Debug\net5.0\StudentPortal.Entites.dll
+C:\Users\vedat\source\repos\StudentPortal\StudentPortal.Entites\obj\Debug\net5.0\ref\StudentPortal.Entites.dll
+C:\Users\vedat\source\repos\StudentPortal\StudentPortal.Entites\obj\Debug\net5.0\StudentPortal.Entites.pdb

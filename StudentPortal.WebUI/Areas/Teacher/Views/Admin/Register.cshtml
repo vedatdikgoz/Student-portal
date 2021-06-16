@@ -1,0 +1,59 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "New Student";
+    Layout = "~/Areas/Teacher/Views/Shared/_TeacherLayout.cshtml";
+}
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Akademisyen Yeni Öğrenci</title>
+    <link rel="stylesheet" href="/customcss/bootstrap/css/bootstrap.min.css">
+    <link href="/customcss/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/customcss/libs/css/style.css">
+    <link rel="stylesheet" href="/customcss/fonts/fontawesome/css/fontawesome-all.css">
+</head>
+
+
+<form class="splash-container" asp-controller="Admin" asp-action="Register" method="post">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="mb-1">Yeni Kayıt</h3>
+            <p>Yeni öğrenci kaydı ekle</p>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <input asp-for="UserName" class="form-control form-control-lg" type="text" placeholder="Kullanıcı Adı">
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="FirstName" class="form-control form-control-lg" type="text" placeholder="Ad">
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="LastName" class="form-control form-control-lg" type="text" placeholder="Soyad">
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Email" class="form-control form-control-lg" type="email" placeholder="E-mail">
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="PhoneNumber" class="form-control form-control-lg" type="tel" placeholder="Telefon">
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Password" class="form-control form-control-lg" type="password" placeholder="Şifre">
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group pt-2">
+                <button class="btn btn-block btn-primary" type="submit">Öğrenci Ekle</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+

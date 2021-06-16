@@ -1,0 +1,70 @@
+﻿@model AddMarkModel
+@{
+    ViewData["Title"] = "New Mark";
+    Layout = "~/Areas/Teacher/Views/Shared/_TeacherLayout.cshtml";
+}
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Akademisyen Not Ekleme</title>
+    <link rel="stylesheet" href="/customcss/bootstrap/css/bootstrap.min.css">
+    <link href="/customcss/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/customcss/libs/css/style.css">
+    <link rel="stylesheet" href="/customcss/fonts/fontawesome/css/fontawesome-all.css">
+</head>
+
+<form class="splash-container" asp-controller="Admin" asp-action="AddMarks" method="post">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="mb-1">Yeni Not Girişi</h3>
+            <p>Yeni not kaydı ekle</p>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <input type="hidden" name="Id" value="@Model.Id">
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <input readonly="readonly" asp-for="FirstName" class="form-control" type="text" />
+                </div>
+                <div class="form-group col-md-6">
+                    <input readonly="readonly" asp-for="LastName" class="form-control" type="text" />
+                </div>
+            </div>
+            <div class="form-group">
+                <input readonly="readonly" asp-for="ChosenCourseName" class="form-control form-control-lg" type="text">
+            </div>
+            <div class="form-group">
+                <input asp-for="Midterm" class="form-control form-control-lg" type="number">
+                <span asp-validation-for="Midterm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Quiz1" class="form-control form-control-lg" type="number">
+                <span asp-validation-for="Quiz1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Quiz2" class="form-control form-control-lg" type="number">
+                <span asp-validation-for="Quiz2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Homework" class="form-control form-control-lg" type="number">
+                <span asp-validation-for="Homework" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Final" class="form-control form-control-lg" type="number">
+                <span asp-validation-for="Final" class="text-danger"></span>
+            </div>
+
+            <div class="form-group pt-2">
+                <button class="btn btn-block btn-primary" type="submit">Not Ekle</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+
+
